@@ -1,0 +1,175 @@
+body{
+  background-color: #f4f4f4;
+  color: black;
+  padding: 10px;
+}
+.wrapper{
+  background-color: #ffffff;
+  padding: 20px;
+}
+.logo{
+  padding-top: 1%;
+  font-family:'Cedarville Cursive', cursive;
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #f4f4f4;
+}
+.logo a{
+  padding-top: 1%;
+  color: black;
+  font-family:'Cedarville Cursive', cursive;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #f4f4f4;
+}
+
+.socialsearch {
+  float: left;
+  background-color: #ffffff;
+  padding: 1%;
+  width: 20%;
+}
+.search {
+  float: right;
+  display: inline;
+  width: 30%;
+}
+.nav {
+  overflow: hidden;
+  background-color: #ffffff;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 5px;
+  border-bottom-color: #f4f4f4;
+  border-bottom-style: solid;
+}
+.nav a{
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  color: black;
+  text-decoration: none;
+  font-family:arial;
+  font-weight: normal;
+}
+.textArea{
+  padding: 25px;
+  color: black;
+  text-decoration: none;
+  font-family: arial;
+  font-weight: normal;
+  text-align: center;
+  border-top: 5px;
+  border-top-color: #f4f4f4;
+  border-top-style: solid;
+}
+.catalogue{
+  width: 100%;
+  text-align:center;
+}
+.center{
+  display: inline-block;
+  padding:10px;
+  text-align: center;
+}
+.images p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea{
+    width: 200px; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    display: inline; /* Display inline for top bar */
+    float: right; /* Move to right of page*/
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.display input[type=text], select, textarea, [type=password]{
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+      background-color: #f4f4f4;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+      background-color: #f8f8f8;
+  }
+
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #f8f8f8;
+}
+
+footer{
+  color: black;
+  background-color: #ffffff;
+  padding: 4%;
+  font-family: arial;
+  border-top: 5px;
+  border-top-color: #f4f4f4;
+  border-top-style: solid;
+}
+
+.display{
+  padding:4%;
+  background-color: #ffffff;
+  color: black;
+  font-family: arial;
+}
+.recipe{
+  font-family: arial;
+  border-bottom: 5px;
+  border-bottom-color: #f4f4f4;
+  border-bottom-style: solid;
+  border-top: 5px;
+  border-top-color: #f4f4f4;
+  border-top-style: solid;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.recipe a, a:visited{
+  color: black;
+  text-decoration: underline;
+}
+.recipe img{
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.recipe p{
+  text-align: center;
+  font-size: 22px;
+}

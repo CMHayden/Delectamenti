@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta name="description" content="A website gathering recipes and helping to teach people how to cook."></meta>
+    <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."></meta> <!-- used by search engines -->
+    <meta name="author" content="Callum M Hayden & Martyn Dewar"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> <!-- used for RWD -->
+	  <title>Login</title>
+    <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css"></link>
+    <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
+</head>
+<body>
+<div class = "wrapper" id="wrapper">
+  <div class = "socialsearch" id="socialsearch">
+    <a href=#instagram><img src="instagram.png" alt="Instagram link" width="25" height="25"></img></a>
+    <a href=#twitter><img src="twitter.png" alt="Twitter link" width="25" height="25"></img></a>
+    <a href=#pinterest><img src="pinterest.png" alt="Pinterest link" width="25" height="25"></img></a>
+    <a href=#facebook><img src="facebook.png" alt="Facebook link" width="25" height="25"></img></a>
+  </div>
+  <div class = "search" id="search">
+    <form>
+      <input type="text" name="search" placeholder="Search.."></input>
+    </form>
+  </div>
+  <div class = "logo" id="logo">
+    <a href="index.html"><h1>Delectamenti</h1></a>
+  </div>
+  <div class = "nav" id="myNav">
+    <a                  href="index.html">    Home    </a>
+    <a></a>
+    <a                  href="about.html">    About   </a>
+    <a></a>
+    <a                  href="contact.html">  Contact </a>
+    <a></a>
+    <a                  href="login.html">    Login   </a>
+  </div>
+  <div class = "display">
+    Login will be created along with the database.</br>
+    This is due to not being able to test without having users and passwords stored
+    in a database, nor having anywhere to store information about creating accounts.
+    But this is how it will look (without functionality):
+    <br /> <br />
+    <form name="login" method="post" action="#TODO.php">
+
+      <label for="username">Username</label>
+      <input type="text" id="uname" name="username" placeholder="Your username.."></input>
+      <br />
+      <label for="lname">Password</label>
+      <input type="password" id="pw" name="password" placeholder="Your password..."></input>
+      <br />
+      <input type="submit" value="LogIn"></input>
+      <input type="submit" value="SignUp"></input>
+      <input type="submit" value="ForgotPassword"></input>
+    </form>
+  </div>
+</body>
+<footer>
+  <div class ="footer" id="footer">
+    Creative design coursework prototype authored by Callum M Hayden and Martyn Dewar. For further information contact us on
+    cmh1@hw.ac.uk or md46@hw.ac.uk and we will try to respond as swiftly
+    as possible.
+  </div>
+</footer>
+</html>

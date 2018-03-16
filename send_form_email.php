@@ -21,10 +21,10 @@ if(isset($_POST['email'])) {
       <body>
       <div class = "wrapper" id="wrapper">
         <div class = "socialsearch" id="socialsearch">
-          <a href=https://www.instagram.com/delectamentiuk><img src="instagram.png" alt="Instagram link" width="25" height="25"></img></a>
-          <a href=https://twitter.com/DelectamentiUk><img src="twitter.png" alt="Twitter link" width="25" height="25"></img></a>
-          <a href=https://www.pinterest.co.uk/delectamenti/pins/><img src="pinterest.png" alt="Pinterest link" width="25" height="25"></img></a>
-          <a href=https://www.facebook.com/DelectamentiUK/><img src="facebook.png" alt="Facebook link" width="25" height="25"></img></a>
+          <a href=https://www.instagram.com/delectamentiuk><img src="Image/instagram.png" alt="Instagram link" width="25" height="25"></img></a>
+          <a href=https://twitter.com/DelectamentiUk><img src="Image/twitter.png" alt="Twitter link" width="25" height="25"></img></a>
+          <a href=https://www.pinterest.co.uk/delectamenti/pins/><img src="Image/pinterest.png" alt="Pinterest link" width="25" height="25"></img></a>
+          <a href=https://www.facebook.com/DelectamentiUK/><img src="Image/facebook.png" alt="Facebook link" width="25" height="25"></img></a>
         </div>
         <div class = "search" id="search">
           <form>
@@ -143,10 +143,10 @@ $headers = 'From: '.$email_from."\r\n".
 <body>
 <div class = "wrapper" id="wrapper">
   <div class = "socialsearch" id="socialsearch">
-    <a href=https://www.instagram.com/delectamentiuk><img src="instagram.png" alt="Instagram link" width="25" height="25"></img></a>
-    <a href=https://twitter.com/DelectamentiUk><img src="twitter.png" alt="Twitter link" width="25" height="25"></img></a>
-    <a href=https://www.pinterest.co.uk/delectamenti/pins/><img src="pinterest.png" alt="Pinterest link" width="25" height="25"></img></a>
-    <a href=https://www.facebook.com/DelectamentiUK/><img src="facebook.png" alt="Facebook link" width="25" height="25"></img></a>
+    <a href=https://www.instagram.com/delectamentiuk><img src="Image/instagram.png" alt="Instagram link" width="25" height="25"></img></a>
+    <a href=https://twitter.com/DelectamentiUk><img src="Image/twitter.png" alt="Twitter link" width="25" height="25"></img></a>
+    <a href=https://www.pinterest.co.uk/delectamenti/pins/><img src="Image/pinterest.png" alt="Pinterest link" width="25" height="25"></img></a>
+    <a href=https://www.facebook.com/DelectamentiUK/><img src="Image/facebook.png" alt="Facebook link" width="25" height="25"></img></a>
   </div>
   <div class = "search" id="search">
     <form>

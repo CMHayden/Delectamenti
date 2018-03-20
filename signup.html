@@ -6,7 +6,7 @@
     <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."></meta> <!-- used by search engines -->
     <meta name="author" content="Callum M Hayden & Martyn Dewar"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> <!-- used for RWD -->
-	  <title>Login</title>
+	  <title>Sign up</title>
     <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css"></link>
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
 </head>
@@ -36,16 +36,27 @@
     <a                  href="login.html">    Login   </a>
   </div>
   <div class = "display">
-    <form name="login" method="post" action="LogIn.php">
+    Please fill out the form bellow to create your account:
+    <form name="login" method="post" action="register.php">
       <label for="username">Username</label>
       <input type="text" id="user_name" name="user_name" placeholder="Your username.."></input>
       <br />
-      <label for="lname">Password</label>
+      <label for="passwd">Password</label>
       <input type="password" id="passwd" name="passwd" placeholder="Your password..."></input>
       <br />
-      <input type="submit" value="Log In"></input>
-      <input type="button" value="Sign Up" onclick="window.location.href='signup.html'"></input>
-      <input type="button" value="Forgot Password" onclick="window.location.href='forgotpassword.html'"></input>
+      <label for="passwd">Repeat your password</label>
+      <input type="password" id="confrim_passwd" name="confirm_passwd" placeholder="Repeat your password..."></input>
+      <br />
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..."></input>
+      <br />
+      <label for="secret_answer">Secret message</label>
+      <input type="text" id="secret_answer" name="secret_answer" placeholder="Your secret message..."></input>
+      <br />
+      <input type="checkbox" name="vegetarian" value="true">Vegetarian<br />
+      <input type="checkbox" name="vegan" value="true">Vegan<br />
+      <br />
+      <input type="submit" value="Register"></input>
     </form>
   </div>
 </body>

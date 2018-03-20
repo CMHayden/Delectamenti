@@ -1,61 +1,13 @@
 Yey todos are life. Todos are love.
 
-Misc:
-Find more recipes and categories for database.
-Current categories: desserts (1), british (2), italian (1), vegetarian (1)
-Current recipes: chocolate volcano cake, steak and chips, vegetable pad thai,
-spaghetti alla carbonara, fry up.
-Potential categories: tapas, french, asian (split to chinese, thai, vietnameese...?)
-quick and easy
-
-
-
 HTML:
-Footer text
-Add buttons to categories + categories page.
-
-
+Modify categories and recipes to use database.
 
 Database:
-Recipe(table)
-recipe_id int primary_key auto_increment
-food_category_id int foreign_key
-recipe_name varchar
-recipe_description varchar
-vegetarian_friendly Boolean not null
-recipe_image varchar
-
-Food Category(table)
-food_category_id int primary_key auto_increment
-food_category_name varchar
-
-Ingredients(table)
-ingredient_id int primary_key auto_increment
-ingredient_name varchar
-
-Quantity(table)
-quantity_id int primary_key auto_increment
-recipe_id int foreign_key
-ingredient_id int foreign_key
-ingredient_quantity varchar
-
-Recipe Steps(table)
-step_id int primary_key auto_increment
-recipe_id int foreign_id
-step_number int
-step_description varchar
-
-Users(table)
-user_id int primary_key auto_increment
-user_name varchar
-email varchar
-password varchar
-
 Fill database with data
 
-
-
 Queries + php:
+info.php - add server
 Search for a cuisine by name, ingredient or category
 Login (switch login button for user_name)
 Register
@@ -63,3 +15,10 @@ Forgot password
 Categories displayed through Database
 Recipes displayed through Categories
 Random recipe of the day displayed
+
+Misc:
+Find more recipes and categories for database. (Least important)
+
+Helpful:
+https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
+https://www.macs.hw.ac.uk/phpMyAdmin/

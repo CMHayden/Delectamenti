@@ -3,7 +3,6 @@ Yey todos are life. Todos are love.
 Create search functionality high priority
 Fill the database with data high priority
 Create php pages to display the content on database instead of static html high priority
-Create login system high priority
 Create options for logged in users low priority (options to add allergies / state they are vegetarian / change the theme of the website)
 Create cms low priority (allow admin to add recipes to the database)
 
@@ -15,9 +14,6 @@ Fill database with data
 
 Queries + php:
 Search for a cuisine by name, ingredient or category
-Login (switch login button for user_name)
-Register
-Forgot password
 Categories displayed through Database
 Recipes displayed through Categories
 Random recipe of the day displayed

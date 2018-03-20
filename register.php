@@ -1,94 +1,87 @@
 <?php
-// Include config file
-require_once 'info.php';
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$DB_Name = "cmh1";
 
-// Define variables and initialize with empty values
-$user_name = $passwd = $confirm_passwd = $email ="";
-$user_name_err = $passwd_err = $confirm_passwd_err = $email_err = "";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $DB_Name);
 
-// Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-    // Validate username
-    if(empty(trim($_POST["user_name"]))){
-        $user_name_err = "Please enter a username.";
-    } else{
-        // Prepare a select statement
-        $sql = "SELECT id FROM users WHERE user_name = ?";
+$username = $_POST['user_name']; // required
+$password = $_POST['passwd']; // required
+$email = $_POST['email']; // required
+$secret = $_POST['secret_answer']; // required
 
-        if($stmt = mysqli_prepare($link, $sql)){
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_user_name);
+$sql = "INSERT INTO Users (user_name, email, passwd, secret_answer)
+VALUES ('$username', '$email','$password', '$secret')";
 
-            // Set parameters
-            $param_user_name = trim($_POST["user_name"]);
-
-            // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
-                /* store result */
-                mysqli_stmt_store_result($stmt);
-
-                if(mysqli_stmt_num_rows($stmt) == 1){
-                    $user_name_err = "This username is already taken.";
-                } else{
-                    $user_name = trim($_POST["user_name"]);
-                }
-            } else{
-                echo "Oops! Something went wrong. Please try again later.";
-            }
-        }
-
-        // Close statement
-        mysqli_stmt_close($stmt);
-    }
-
-    // Validate password
-    if(empty(trim($_POST['passwd']))){
-        $passwd_err = "Please enter a password.";
-    } elseif(strlen(trim($_POST['passwd'])) < 6){
-        $passwd_err = "Password must have atleast 6 characters.";
-    } else{
-        $passwd = trim($_POST['passwd']);
-    }
-
-    // Validate confirm password
-    if(empty(trim($_POST["confirm_passwd"]))){
-        $confirm_passwd_err = 'Please confirm password.';
-    } else{
-        $confirm_passwd = trim($_POST['confirm_passwd']);
-        if($passwd != $confirm_passwd){
-            $confirm_passwd_err = 'Password did not match.';
-        }
-    }
-
-    // Check input errors before inserting in database
-    if(empty($username_err) && empty($passwd_err) && empty($confirm_passwd_err)){
-
-        // Prepare an insert statement
-        $sql = "INSERT INTO users (username, password, email, secret_answer) VALUES (?, ?, ?, ?)";
-
-        if($stmt = mysqli_prepare($link, $sql)){
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
-
-            // Set parameters
-            $param_user_name = $user_name;
-            $param_passwd = password_hash($passwd, PASSWORD_DEFAULT); // Creates a password hash
-
-            // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
-                // Redirect to login page
-                header("location: login.php");
-            } else{
-                echo "Something went wrong. Please try again later.";
-            }
-        }
-
-        // Close statement
-        mysqli_stmt_close($stmt);
-    }
-
-    // Close connection
-    mysqli_close($link);
+if ($conn->query($sql) === TRUE) {
+    echo '
+    <html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content="A website gathering recipes and helping to teach people how to cook."></meta>
+        <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."></meta> <!-- used by search engines -->
+        <meta name="author" content="Callum M Hayden & Martyn Dewar"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> <!-- used for RWD -->
+    	  <title>Login</title>
+        <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css"></link>
+        <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
+    </head>
+    <body>
+    <div class = "wrapper" id="wrapper">
+      <div class = "socialsearch" id="socialsearch">
+        <a href=https://www.instagram.com/delectamentiuk><img src="Image/instagram.png" alt="Instagram link" width="25" height="25"></img></a>
+        <a href=https://twitter.com/DelectamentiUk><img src="Image/twitter.png" alt="Twitter link" width="25" height="25"></img></a>
+        <a href=https://www.pinterest.co.uk/delectamenti/pins/><img src="Image/pinterest.png" alt="Pinterest link" width="25" height="25"></img></a>
+        <a href=https://www.facebook.com/DelectamentiUK/><img src="Image/facebook.png" alt="Facebook link" width="25" height="25"></img></a>
+      </div>
+      <div class = "search" id="search">
+        <form>
+          <input type="text" name="search" placeholder="Search.."></input>
+        </form>
+      </div>
+      <div class = "logo" id="logo">
+        <a href="index.html"><h1>Delectamenti</h1></a>
+      </div>
+      <div class = "nav" id="myNav">
+        <a                  href="index.html">    Home    </a>
+        <a></a>
+        <a                  href="about.html">    About   </a>
+        <a></a>
+        <a                  href="contact.html">  Contact </a>
+        <a></a>
+        <a                  href="login.html">    Login   </a>
+      </div>
+      <div class = "display">
+        Account created succesfully! Fill in the form bellow to log in: <br /><br />
+        <form name="login" method="post" action="login.php">
+          <label for="username">Username</label>
+          <input type="text" id="user_name" name="user_name" placeholder="Your username.."></input>
+          <br />
+          <label for="lname">Password</label>
+          <input type="password" id="passwd" name="passwd" placeholder="Your password..."></input>
+          <br />
+          <input type="submit" value="Log In"></input>
+          <input type="button" value="Sign Up" onclick="window.location.href="signup.html"></input>
+          <input type="button" value="Forgot Password" onclick="window.location.href="forgotpassword.html"></input>
+        </form>
+      </div>
+    </body>
+    <footer>
+      <div class ="footer" id="footer">
+        Copyright © 2018 Delectamenti. Delectamenti is not responsible for any allergic reactions caused by the consumption of our recipes. <a href="http://www.fda.gov/Food/ResourcesForYou/Consumers/ucm079311.htm"> Please check this FDA document on food allergies if unsure. </a>
+        Recipes for this website have been used under the non-commercial research and private study exception to the Copyright. All recipes originally sourced from BBC Food.
+        Any enquiries please use the contact form or email us at <a href="mailto:delectamentiuk@gmail.com?Subject=Enquiry" target="_top">DelectamentiUK@gmail.com</a> .
+      </div>
+    </footer>
+    </html>';
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 ?>

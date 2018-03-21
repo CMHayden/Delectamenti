@@ -29,7 +29,7 @@
       <input type="text" name="search" placeholder="Search.."></input>
     </form>
   </div>
-  <div class = "logo" id="logo">
+  <div class = "logohead" id="logohead">
     <a href="index.html"><h1>Delectamenti</h1></a>
   </div>
   <div class = "nav" id="myNav">

@@ -6,7 +6,22 @@
     <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."></meta> <!-- used by search engines -->
     <meta name="author" content="Callum M Hayden & Martyn Dewar"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> <!-- used for RWD -->
-	  <title>British</title>
+	<?php
+	//get category ID
+	$cat= $_GET['cat'];
+	//get countryname
+	$cat= $_GET['country'];
+		echo'
+	<title>Delectamenti ~ Recipes from ' . $country . '</title>
+	<meta name="DC.Title" content="Recipes from ' . $country . '">
+	';
+	?>
+	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">
+	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">
+	<meta name="DC.Description" content="A website gathering recipes and helping to teach people how to cook.">
+	<meta name="DC.Publisher" content="Martyn Dewar &amp; Callum Hayden, MACS, Heriot-Watt University">
+	<meta name="DC.Language" content="en-GB">
+	<meta name="DC.Date" content="2018">
     <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css"></link>
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
 </head>
@@ -27,26 +42,18 @@
     <a href="index.html"><h1>Delectamenti</h1></a>
   </div>
   <div class = "nav" id="myNav">
-    <a                  href="index.html">    Home    </a>
-    <a></a>
-    <a                  href="about.html">    About   </a>
-    <a></a>
-    <a                  href="contact.html">  Contact </a>
-    <a></a>
-    <a                  href="login.html">    Login   </a>
+    <?php include 'includes/nav.php';?>
   </div>
   <div class = "textArea" id="textArea">
-    Try some of our British food! Feel free to use the search bar if you can't find anything that takes your fancy.
+    Try some of our <?php echo $country ?> food! Feel free to use the search bar if you can't find anything that takes your fancy.
   </div>
   <div class = "catalogue" id="catalogue">
-    <?php include 'rlist.php';?>
+    <?php include 'rlist.php?cat='$cat;?>
   </div>
-</body>
 <footer>
   <div class ="footer" id="footer">
-    Copyright © 2018 Delectamenti. Delectamenti is not responsible for any allergic reactions caused by the consumption of our recipes. <a href="https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm079311.htm"> Please check this FDA document on food allergies if unsure. </a>
-    Recipes for this website have been used under the non-commercial research and private study exception to the Copyright. All recipes originally sourced from BBC Food.
-    Any enquiries please use the contact form or email us at <a href="mailto:delectamentiuk@gmail.com?Subject=Enquiry" target="_top">DelectamentiUK@gmail.com</a> .
+    <?php include 'includes/footer.php';?>
   </div>
 </footer>
+</body>
 </html>

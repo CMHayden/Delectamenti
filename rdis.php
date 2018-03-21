@@ -50,7 +50,8 @@ if ($result->num_rows > 0) {
 	<!-- specify title -->	
 	<?php echo'
 	<title>Delectamenti ~ ' . $title . '</title>
-	<meta name="DC.Title" content="Recipe for ' . $title . '">';
+	<meta name="DC.Title" content="Recipe for ' . $title . '">
+	';
 	?>
 	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">
 	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">
@@ -103,7 +104,10 @@ if ($result->num_rows > 0) {
       echo
       '<h2>' . $title .'</h2>';
 		// build elements
-		echo '<img src="Image/'. $imgsrc . '" alt="'. $title. '"  width="220" height="170">';
+		echo '
+		<div class="recipe.image">
+			<img src="Image/'. $imgsrc . '" alt="'. $title. '"  width="220" height="170">
+		</div>';
       echo '
 	  <div class="recipe.ingredients">
 			<h3>What you will need&#8230;</h3>

@@ -103,21 +103,20 @@ if ($result->num_rows > 0) {
       echo
       '<h2>' . $title .'</h2>';
 		// build elements
-
+		echo '        <div align="center" class ="center">
+            <a href="rdis.php?rid='.$rid.'&cat='.$cat.'><img src="'. $imgsrc . '" alt="'. $title. '"  width="220" height="170"></img>
+            <p> '. $row["recipe_name"]. ' </p></a>';
       echo '
-	  {
-	  		<div class="recipe.ingredients">
+	  <div class="recipe.ingredients">
 			<h3>What you will need&#8230;</h3>
 						  <ol>'; include 'includes/get_ingredients.php'; echo'
 			  </ol>
 			</div>
+			<div class="recipe.method">
 			<h3>What to do:</h3>
 			
 			  <ol>'; include 'includes/get_steps.php'; echo'
 			  </ol>
-        <div align="center" class ="center">
-            <a href="rdis.php?rid='. $row["recipe_id"]. '"><img src="'. $imgsrc . '" alt="'. $title. '"  width="220" height="170"></img>
-            <p> '. $row["recipe_name"]. ' </p></a>
         </div>
       ';
     	

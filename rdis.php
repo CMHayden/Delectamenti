@@ -38,13 +38,7 @@ $result = $conn->query($sql);
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css">
 		<link rel="stylesheet" href="temp.css">
 	<link rel="stylesheet" href="https://use.typekit.net/iew2fuc.css">
-	<!-- specify title -->
-	<?php
-		if ($result->num_rows > 0) {
-      echo
-      '<title>Delectamenti ~ '. $row["recipe_name"].'</title>
-	  <meta name="DC.Title" content="Recipe for "'. $row["recipe_name"] .'""';
-	?>		
+	<!-- specify title -->	
 	
 	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">
 	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">

@@ -48,7 +48,10 @@ if ($result->num_rows > 0) {
 		<link rel="stylesheet" href="temp.css">
 	<link rel="stylesheet" href="https://use.typekit.net/iew2fuc.css">
 	<!-- specify title -->	
-	
+	<?php echo'
+	<title>Delectamenti ~ ' . $title . '</title>
+	<meta name="DC.Title" content="Recipe for ' . $title . '">';
+	?>
 	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">
 	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">
 	<meta name="DC.Description" content="A website gathering recipes and helping to teach people how to cook.">

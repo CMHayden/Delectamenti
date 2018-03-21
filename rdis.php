@@ -44,7 +44,7 @@ $result = $conn->query($sql);
     while($row = $result->fetch_assoc()) {
       echo
       '<title>Delectamenti ~ '. $row["recipe_name"].'</title>
-	  <meta name="DC.Title" content="Recipe for "'. $row["recipe_name"].'""'>';
+	  <meta name="DC.Title" content="Recipe for "'. $row["recipe_name"]. '""'>';
     };			
 	
 	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">

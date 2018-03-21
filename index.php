@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- used for RWD -->
     <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css">
+	<link rel="stylesheet" href="temp.css">
 	<link rel="stylesheet" href="https://use.typekit.net/iew2fuc.css">
 	<title>Delectamenti ~ Home</title> <!-- specify title -->
 	<meta name="DC.Title" content="Delectamenti Recipe website">

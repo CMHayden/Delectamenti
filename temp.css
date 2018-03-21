@@ -1,0 +1,12 @@
+/* CSS Document */
+logo.h1 {
+    color: orange;
+    font-family: 'federico-web';
+    font-size: 5.4vmax;
+    margin-bottom: 0px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgba(14,194,113,1.00);
+}
+body {
+	font-family: 'lemonde-sans';
+}

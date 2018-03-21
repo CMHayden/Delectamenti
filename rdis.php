@@ -83,20 +83,16 @@ $rid= $_GET['rid'];
 		<?php
 	
       echo '
+	  {
 			<h3>What to do:</h3>
-			  <ol>'include 'includes/get_steps.php'; echo'
+			  <ol>'; include 'includes/get_steps.php'; echo'
 			  </ol>
         <div align="center" class ="center">
             <a href="rdis.php?rid='. $row["recipe_id"]. '"><img src="'. $row["recipe_image"]. '" alt="'. $row["recipe_name"]. '"  width="220" height="170"></img>
             <p> '. $row["recipe_name"]. ' </p></a>
         </div>
       ';
-    }
-  }else{
-    echo 'Sorry, there is a fault. Click <a href="index.php" title="return to homepage">here</a> to return to the homepage.<br>Our apologies.</a>';
-  }
-
-		
+    	
 		?>
 		
 		

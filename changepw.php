@@ -20,6 +20,23 @@ $email = $_POST['email']; // required
 $sql = "UPDATE Users SET passwd='$password' WHERE user_name='$username' AND email='$email'";
 
 if ($conn->query($sql) === TRUE) {
+	// sets email where appropriate
+                        $mailFrom = "MACS <md46@macs.hw.ac.uk>";
+                        $mailTo = $email;
+                        $mailCC = "md46@hw.ac.uk";
+                        $mailSubject = "Your Delectamenti account";
+                        // compose email
+                        $mailBody = "Dear $username,\r\n".
+                        "This is just a short email to confirm that your account password has been updated.\r\n".
+                        "If you did not request this change, please contact our support helpdesk.\r\n".
+						"Thank you,\r\n".
+						"Team Delectamenti.";
+
+                        // glue the headers together
+                        $mailHeaders = "From: $mailFrom" . "\r\n" .
+                        "CC: $mailCC" . "\r\n" .
+                        "X-Mailer: Error Handler";
+		mail($mailTo,$mailSubject,$mailBody,$mailHeaders);
         echo '
         <html>
         <head>

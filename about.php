@@ -30,8 +30,8 @@
     <?php include 'includes/nav.php';?>
   </div>
   <div class ="textArea">
-    <b>Delect-a-what?</b>
-    <br /><br />
+	  <h2>Delect-a-what?</h2>
+    <p
     Delectamenti (latin for <i>delicious</i>) was born from a simple idea - people want to eat well, but, sometimes they need to know
     how to make their favourite dish.
     <br /><br />
@@ -39,6 +39,8 @@
     have and, at the same time, help to reduce your carbon footprint by reducing food waste?
     <br /><br />
     Well, now there is. Welcome to Delectamenti - we hope you find our service useful!
+	  </p>
+<iframe frameborder="0" width="560" height="315" src="https://biteable.com/watch/embed/delectamenti-1806598" allowfullscreen="true"></iframe><p><a href="https://biteable.com/watch/delectamenti-1806598">delectamenti</a> on <a href="https://biteable.com">Biteable</a>.</p>
   </div>
 </body>
 <footer>

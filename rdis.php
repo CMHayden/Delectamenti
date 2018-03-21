@@ -38,8 +38,15 @@ $result = $conn->query($sql);
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css">
 		<link rel="stylesheet" href="temp.css">
 	<link rel="stylesheet" href="https://use.typekit.net/iew2fuc.css">
-	<title>Delectamenti ~ <?php echo $rid ?></title> <!-- specify title -->
-	<meta name="DC.Title" content="Vegetable pad Thai">
+	<!-- specify title -->
+	<?php
+		if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+      echo
+      '<title>Delectamenti ~ '. $row["recipe_name"].'</title>
+	  <meta name="DC.Title" content="Recipe for "'. $row["recipe_name"].'""'>';
+    };			
+	
 	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">
 	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">
 	<meta name="DC.Description" content="A website gathering recipes and helping to teach people how to cook.">

@@ -26,7 +26,7 @@ $rid= $_GET['rid'];
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
 		<link rel="stylesheet" href="temp.css">
 	<link rel="stylesheet" href="https://use.typekit.net/iew2fuc.css">
-	<title>Delectamenti ~ <?php echo ?></title> <!-- specify title -->
+	<title>Delectamenti ~ <?php echo $rid ?></title> <!-- specify title -->
 	<meta name="DC.Title" content="Vegetable pad Thai">
 	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">
 	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">

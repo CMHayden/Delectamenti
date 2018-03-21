@@ -87,7 +87,15 @@ $result = $conn->query($sql);
     <div class = "recipe">
 	<section aria-label="recipe" id="recipe">
 		<?php
-		echo '<h2>'. $row["recipe_name"].'</h2>';
+		if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+      echo
+      '<h2>'. $row["recipe_name"].'</h2>';
+    }
+  }else{
+    echo'
+    No' . $cat . 'recipes found';
+  };
 		// build elements
 
       echo '

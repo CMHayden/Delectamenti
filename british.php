@@ -39,7 +39,7 @@
     Try some of our British food! Feel free to use the search bar if you can't find anything that takes your fancy.
   </div>
   <div class = "catalogue" id="catalogue">
-    <?php include 'rlist.php?cat=0';?>
+    <?php include 'rlist.php';?>
   </div>
 </body>
 <footer>

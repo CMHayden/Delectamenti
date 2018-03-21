@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
       echo '
         <div align="center" class ="center">
-            <a href="rdis.php?rid='. $row["recipe_id"]. '"><img src="'. $row["recipe_image"]. '" alt="'. $row["recipe_name"]. '"  width="220" height="170"></img>
+            <a href="rdis.php?rid='. $row["recipe_id"]. '"><img src="Image/'. $row["recipe_image"]. '" alt="'. $row["recipe_name"]. '"  width="220" height="170"></img>
             <p> '. $row["recipe_name"]. ' </p></a>
         </div>
       ';

@@ -3,7 +3,10 @@ $servername = "mysql-server-1";
 $username = "cmh1";
 $password = "abccmh1354";
 $DB_Name = "cmh1";
+// category ID
 $cat= $_GET['cat'];
+// record ID
+$rid= $_GET['rid'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $DB_Name);

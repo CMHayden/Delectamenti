@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
+$servername = "mysql-server-1";
+$username = "cmh1";
+$password = "abccmh1345";
 $DB_Name = "cmh1";
 
 // Create connection
@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT recipe_name, recipe_image FROM Recipe WHERE food_category_id = 'britishTODO'";
+$sql = "SELECT recipe_name, recipe_image FROM Recipe WHERE food_category_id = 'british'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

@@ -17,7 +17,7 @@ $rid= $_GET['rid'];
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"></meta>
+    <meta charset="UTF-8">
     <meta name="description" content="A website gathering recipes and helping to teach people how to cook.">
     <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."> <!-- used by search engines -->
     <meta name="author" content="Callum M Hayden & Martyn Dewar">
@@ -32,7 +32,8 @@ $rid= $_GET['rid'];
 	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">
 	<meta name="DC.Description" content="A website gathering recipes and helping to teach people how to cook.">
 	<meta name="DC.Publisher" content="Martyn Dewar &amp; Callum Hayden, MACS, Heriot-Watt University">
-	<meta name="DC.Language" content="en-GB"><meta name="DC.Date" content="2018">
+	<meta name="DC.Language" content="en-GB">
+	<meta name="DC.Date" content="2018">
     <script>
     function myFunction() {
         window.print();
@@ -41,7 +42,7 @@ $rid= $_GET['rid'];
 
 </head>
 <body>	<!--start social media and sharing code -->
-		<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab1d5f2b33883001365505d&product=inline-share-buttons"></script>
+		<script src="//platform-api.sharethis.com/js/sharethis.js#property=5ab1d5f2b33883001365505d&product=inline-share-buttons"></script>
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
@@ -60,7 +61,7 @@ $rid= $_GET['rid'];
   </div>
   <div class = "search" id="search">
     <form>
-      <input type="text" name="search" placeholder="Search.."></input>
+      <input type="text" name="search" placeholder="Search..">
     </form>
   </div>
   <div class = "logo" id="logo">
@@ -68,13 +69,7 @@ $rid= $_GET['rid'];
   </div>
   <div class = "nav" id="myNav">
     <nav>
-		<a                  href="index.php">    Home    </a>
-		<a></a>
-		<a                  href="about.html">    About   </a>
-		<a></a>
-		<a                  href="contact.html">  Contact </a>
-		<a></a>
-		<a                  href="login.html">    Login   </a>
+		<?php include 'includes/nav.php';?>
 	  </nav>
   </div>
     <div class = "recipe">
@@ -118,7 +113,7 @@ $rid= $_GET['rid'];
       <!--<button onclick="myFunction()">Print this recipe</button>-->
 		<div class="sharethis-inline-share-buttons"></div>
     </div>
-	<section>
+	<section><h3></h3>
 		<div class="fb-comments" data-href="http://www2.macs.hw.ac.uk/~md46/F28CD/cw/Delectamenti/rdis.php?rid=<?php echo $rid ?><" data-numposts="5"></div>	
 	</section>
     <footer>

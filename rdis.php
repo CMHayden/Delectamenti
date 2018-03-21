@@ -121,8 +121,8 @@ if ($result->num_rows > 0) {
 		?>
 		
 		
-		</div>
 	</section>
+		</div>
       <!--<button onclick="myFunction()">Print this recipe</button>-->
 		<div class="sharethis-inline-share-buttons"></div>
     </div>
@@ -132,7 +132,7 @@ if ($result->num_rows > 0) {
     <footer>
       <div class ="footer" id="footer">
 		<?php include 'includes/footer.php';?>
+		  </div>
     </footer>
-</div>
   </body>
 </html>

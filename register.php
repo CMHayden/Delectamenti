@@ -24,7 +24,7 @@ if ($conn->query($sql) === TRUE) {
 		// sets email where appropriate
                         $mailFrom = "Delectamenti <md46@macs.hw.ac.uk>";
                         $mailTo = $email;
-                        $mailCC = "md46@hw.ac.uk,cmh1@hw.ac.uk,mdehome@demonuk.org";
+                        $mailCC = "md46@hw.ac.uk;cmh1@hw.ac.uk;mdehome@demonuk.org";
                         $mailSubject = "Welcome to Delectamenti!";
                         // compose email
                         $mailBody = "Dear $username,\r\n".

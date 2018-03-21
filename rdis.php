@@ -85,7 +85,7 @@ $rid= $_GET['rid'];
 		if ($result->num_rows > 0) {    while($row = $result->fetch_assoc()) {
       echo '
 	  <h2>'. $row["recipe_name"].'</h2>
-		  <img src="Image/vegetablepadthai.png" alt="Vegetable pad Thai" height="155px" width="220px" padding="15px" align = "left">
+		  <img src="'. $row["recipe_image"].'" alt="'. $row["recipe_name"].'" height="155px" width="220px" padding="15px" align = "left">
 		<div class="recipe.ingredients">
 			<h3>What you will need&#8230;</h3>
 			  200g (7oz) flat rice noodles<br />

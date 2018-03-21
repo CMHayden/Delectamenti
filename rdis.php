@@ -103,9 +103,7 @@ if ($result->num_rows > 0) {
       echo
       '<h2>' . $title .'</h2>';
 		// build elements
-		echo '        <div align="center" class ="center">
-            <a href="rdis.php?rid='.$rid.'&cat='.$cat.'><img src="'. $imgsrc . '" alt="'. $title. '"  width="220" height="170"></img>
-            <p> '. $row["recipe_name"]. ' </p></a>';
+		echo '<img src="'. $imgsrc . '" alt="'. $title. '"  width="220" height="170"></img>';
       echo '
 	  <div class="recipe.ingredients">
 			<h3>What you will need&#8230;</h3>

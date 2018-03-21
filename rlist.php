@@ -4,7 +4,7 @@ $username = "cmh1";
 $password = "abccmh1354";
 $DB_Name = "cmh1";
 $cat= $_GET['cat'];
-
+$country = $_GET['country'];
 // Create connection
 $conn = new mysqli($servername, $username, $password, $DB_Name);
 
@@ -25,9 +25,9 @@ if ($result->num_rows > 0) {
         </div>
       ';
     }
-  }else{
-    echo'
-    No' . $cat . 'recipes found';
+  }else{echo'
+-    Sorry we couldnt find any recipes for ' . $country . '. Why not try again later?
+<br>If you think there is an issue please contact us';
   }
 
 $conn->close();

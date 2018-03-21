@@ -42,11 +42,14 @@
   </div>
   <div class = "catalogue" id="catalogue">
     <div align="center" class ="center">
-      <a href="countrydisp.php?country=British&cat=0"><img src="Image/fryup.png" alt="Full British breakfast"  width="220" height="170">
+      <a href="countrydisp.php?country=Britain&cat=0"><img src="Image/fryup.png" alt="Full British breakfast"  width="220" 
+height="170">
       <p> British food </p></a>
     </div>
     <div align="center" class ="center">
-      <a href=italian.html><img src="Image/spaghettiallacarbonara.png" alt="Spaghetti alla Carbonara" width="220" height="170">
+      <a href="countrydisp.php?country=Italy&cat=2"><img src="Image/spaghettiallacarbonara.png" alt="Spaghetti 
+alla 
+Carbonara" width="220" height="170">
       <p> Italian food </p></a>
     </div>
     <div align="center" class ="center">

@@ -45,10 +45,13 @@
     <?php include 'includes/nav.php';?>
   </div>
   <div class = "textArea" id="textArea">
-    Try some of our <?php echo $country ?> food! Feel free to use the search bar if you can't find anything that takes your fancy.
+<h2>Fancy a taste of <?php echo $country ?>?</h2>
+Try some of our favourites... Feel free to use the search bar if you can't 
+find 
+anything that takes your fancy.
   </div>
   <div class = "catalogue" id="catalogue">
-    <?php include 'rlist.php?cat='.$cat.'';?>
+    <?php include 'rlist.php';?>
   </div>
 <footer>
   <div class ="footer" id="footer">

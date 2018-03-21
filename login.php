@@ -50,14 +50,7 @@ if ($result->num_rows > 0) {
           <div class = "logo" id="logo">
             <a href="index.html"><h1>Delectamenti</h1></a>
           </div>
-          <div class = "nav" id="myNav">
-            <a                  href="index.html">    Home    </a>
-            <a></a>
-            <a                  href="about.html">    About   </a>
-            <a></a>
-            <a                  href="contact.html">  Contact </a>
-            <a></a>
-            <a                  href="login.html">    Login   </a>
+          <div class = "nav" id="myNav">' . include 'includes/nav.php' . '
           </div>
           <div class = "display">
             Login succesfull!

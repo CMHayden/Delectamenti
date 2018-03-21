@@ -4,8 +4,6 @@
 		<a></a>
 		<a href="contact.html" accesskey="c" title="Contact Delectamenti">  Contact </a>
 		<a></a>
-		<a href="login.html" accesskey="l" title="Login">    Login   </a>
-
 <?php
 $cookie_name = 'delectamenti.user';
 if(!isset($_COOKIE[$cookie_name])) {

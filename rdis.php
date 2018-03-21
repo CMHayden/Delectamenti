@@ -87,7 +87,7 @@ $result = $conn->query($sql);
     <div class = "recipe">
 	<section aria-label="recipe" id="recipe">
 		<?php
-	
+		echo '<h2>'. $row["recipe_name"].'</h2>';
 		// build elements
 
       echo '

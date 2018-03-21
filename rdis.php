@@ -103,7 +103,7 @@ if ($result->num_rows > 0) {
       echo
       '<h2>' . $title .'</h2>';
 		// build elements
-		echo '<img src="'. $imgsrc . '" alt="'. $title. '"  width="220" height="170"></img>';
+		echo '<img src="Image/'. $imgsrc . '" alt="'. $title. '"  width="220" height="170"></img>';
       echo '
 	  <div class="recipe.ingredients">
 			<h3>What you will need&#8230;</h3>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"></meta>
-    <meta name="description" content="A website gathering recipes and helping to teach people how to cook."></meta>
-    <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."></meta> <!-- used by search engines -->
-    <meta name="author" content="Callum M Hayden & Martyn Dewar"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> <!-- used for RWD -->
-    <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css"></link>
-    <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
+    <meta charset="UTF-8">
+    <meta name="description" content="A website gathering recipes and helping to teach people how to cook.">
+    <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."><!-- used by search engines -->
+    <meta name="author" content="Callum M Hayden & Martyn Dewar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- used for RWD -->
+    <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css">
 	<link rel="stylesheet" href="https://use.typekit.net/iew2fuc.css">
 	<title>Delectamenti ~ Home</title> <!-- specify title -->
 	<meta name="DC.Title" content="Delectamenti Recipe website">
@@ -20,10 +20,10 @@
 <body>
 <div class = "wrapper" id="wrapper">
   <div class = "socialsearch" id="socialsearch">
-    <a href=https://www.instagram.com/delectamentiuk><img src="Image/instagram.png" alt="Instagram link" width="25" height="25"></img></a>
-    <a href=https://twitter.com/DelectamentiUk><img src="Image/twitter.png" alt="Twitter link" width="25" height="25"></img></a>
-    <a href=https://www.pinterest.co.uk/delectamenti/pins/><img src="Image/pinterest.png" alt="Pinterest link" width="25" height="25"></img></a>
-    <a href=https://www.facebook.com/DelectamentiUK/><img src="Image/facebook.png" alt="Facebook link" width="25" height="25"></img></a>
+    <a href=https://www.instagram.com/delectamentiuk><img src="Image/instagram.png" alt="Instagram link" width="25" height="25"></a>
+    <a href=https://twitter.com/DelectamentiUk><img src="Image/twitter.png" alt="Twitter link" width="25" height="25"></a>
+    <a href=https://www.pinterest.co.uk/delectamenti/pins/><img src="Image/pinterest.png" alt="Pinterest link" width="25" height="25"></a>
+    <a href=https://www.facebook.com/DelectamentiUK/><img src="Image/facebook.png" alt="Facebook link" width="25" height="25"></a>
   </div>
   <div class = "search" id="search">
     <form>
@@ -47,25 +47,25 @@
   </div>
   <div class = "catalogue" id="catalogue">
     <div align="center" class ="center">
-      <a href="british.html"><img src="Image/fryup.png" alt="Full British breakfast"  width="220" height="170"></img>
+      <a href="british.html"><img src="Image/fryup.png" alt="Full British breakfast"  width="220" height="170">
       <p> British food </p></a>
     </div>
     <div align="center" class ="center">
-      <a href=italian.html><img src="Image/spaghettiallacarbonara.png" alt="Spaghetti alla Carbonara" width="220" height="170"></img>
+      <a href=italian.html><img src="Image/spaghettiallacarbonara.png" alt="Spaghetti alla Carbonara" width="220" height="170">
       <p> Italian food </p></a>
     </div>
     <div align="center" class ="center">
-      <a href="vegetarian.html"><img src="Image/vegetablepadthai.png" alt="Vegetable pad Thai" width="220" height="170"></img>
+      <a href="vegetarian.html"><img src="Image/vegetablepadthai.png" alt="Vegetable pad Thai" width="220" height="170">
        <p> Vegetarian friendly </p></a>
     </div>
     <div align="center" class="center">
-      <a href="desserts.html"><img src="Image/chocolatevolcano.png" alt="Chocolate volcano cake" width="220" height="170"></img>
+      <a href="desserts.html"><img src="Image/chocolatevolcano.png" alt="Chocolate volcano cake" width="220" height="170">
       <p> Desserts </p></a>
     </div>
 <div class="recipe">
   <p>Our recommended recipe to try today:
   Full British Breakfast </p><br />
-  <img src="Image/fryup.png" alt="Full British Breakfast" width="220" height="170" align="left"></img>
+  <img src="Image/fryup.png" alt="Full British Breakfast" width="220" height="170" align="left">
     Ingredients: <br></br>
     4 English Pork Sausages<br />
     4 slices Back Bacon<br />

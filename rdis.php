@@ -101,19 +101,9 @@ $rid= $_GET['rid'];
 			  1 lime, quartered<br />
 		</div>
 		  <br />
-		<div>
+		<div>''
 			<h3>What to do:</h3>
-			  <ol>
-				<li>Soak the noodles in freshly boiled water for 12 minutes. Strain and set aside. While the
-				  noodles are soaking, mix the tamarind, fish sauce, sugar and chilli flakes together.</li>
-				<li>Heat the vegetable oil in a large frying pan and add the garlic. Cook briefly, watching it
-				  doesn’t burn, then add the tamarind and fish sauce mixture. Let this bubble for a minute,
-				  then transfer to a bowl.</li>
-				<li>In the same pan, on medium-high heat, add the beaten eggs. Let them set for a minute,
-				  without stirring. Once set, break vigorously with a wooden spoon.</li>
-				<li>Add the stir fry vegetables and cook for 2 minutes, stirring from time to time. Then
-				  add the noodles, pour over the sauce, stir well and cook for another minute or two. Serve
-				  sprinkled with chopped peanuts and a squeeze of lime.</li>
+			  <ol>'include 'includes/get_steps.php?rid=$rid'; echo'
 			  </ol>
         <div align="center" class ="center">
             <a href="rdis.php?rid='. $row["recipe_id"]. '"><img src="'. $row["recipe_image"]. '" alt="'. $row["recipe_name"]. '"  width="220" height="170"></img>

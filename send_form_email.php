@@ -34,14 +34,8 @@ if(isset($_POST['email'])) {
         <div class = "logo" id="logo">
           <a href="index.html"><h1>Delectamenti</h1></a>
         </div>
-        <div class = "nav" id="myNav">
-          <a                  href="index.html">    Home    </a>
-          <a></a>
-          <a                  href="about.html">    About   </a>
-          <a></a>
-          <a                  href="contact.html">  Contact </a>
-          <a></a>
-          <a                  href="login.html">    Login   </a>
+        <div class = "nav" id="myNav">';
+			include 'includes/nav.php'; echo'
         </div>
         <br />
       </body>
@@ -57,10 +51,8 @@ if(isset($_POST['email'])) {
         </form>
       </div>
       <footer>
-      <div class ="footer" id="footer">
-        Copyright © 2018 Delectamenti. Delectamenti is not responsible for any allergic reactions caused by the consumption of our recipes. <a href="https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm079311.htm"> Please check this FDA document on food allergies if unsure. </a>
-          Recipes for this website have been used under the non-commercial research and private study exception to the Copyright. All recipes originally sourced from BBC Food.
-          Any enquiries please use the contact form or email us at <a href="mailto:delectamentiuk@gmail.com?Subject=Enquiry" target="_top">DelectamentiUK@gmail.com</a> .
+      <div class ="footer" id="footer">';
+			include 'includes/footer.php'; echo'
       </div>
       </footer>';
 
@@ -157,13 +149,7 @@ $headers = 'From: '.$email_from."\r\n".
     <a href="index.html"><h1>Delectamenti</h1></a>
   </div>
   <div class = "nav" id="myNav">
-    <a                  href="index.html">    Home    </a>
-    <a></a>
-    <a                  href="about.html">    About   </a>
-    <a></a>
-    <a                  href="contact.html">  Contact </a>
-    <a></a>
-    <a                  href="login.html">    Login   </a>
+    <?php include 'includes/nav.php';?>
   </div>
   <div class="display" id="myDisplay">
     Message sent! Thanks for contacting us. We will get back to you as soon as possible.<br />
@@ -173,9 +159,7 @@ $headers = 'From: '.$email_from."\r\n".
   </div>
   <footer>
     <div class ="footer" id="footer">
-      Copyright © 2018 Delectamenti. Delectamenti is not responsible for any allergic reactions caused by the consumption of our recipes. <a href="https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm079311.htm"> Please check this FDA document on food allergies if unsure. </a>
-      Recipes for this website have been used under the non-commercial research and private study exception to the Copyright. All recipes originally sourced from BBC Food.
-      Any enquiries please use the contact form or email us at <a href="mailto:delectamentiuk@gmail.com?Subject=Enquiry" target="_top">DelectamentiUK@gmail.com</a> .
+      <?php include 'includes/footer.php';?>
     </div>
   </footer>
 </body>

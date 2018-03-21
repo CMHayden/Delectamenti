@@ -22,7 +22,7 @@ $rid= $_GET['rid'];
 
 $sql = "SELECT recipe_id, recipe_name, recipe_image FROM Recipe WHERE recipe_id = '$rid'";
 $result = $conn->query($sql);
-
+$title = $row["recipe_name"];
 
 ?>
 
@@ -87,15 +87,9 @@ $result = $conn->query($sql);
     <div class = "recipe">
 	<section aria-label="recipe" id="recipe">
 		<?php
-		if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
+
       echo
-      '<h2>'. $row["recipe_name"].'</h2>';
-    }
-  }else{
-    echo'
-    No' . $cat . 'recipes found';
-  };
+      '<h2>' . $title .'</h2>';
 		// build elements
 
       echo '

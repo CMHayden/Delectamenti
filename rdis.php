@@ -15,12 +15,14 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT recipe_id, recipe_name, recipe_image FROM Recipe WHERE recipe_id = '$rid'";
-$result = $conn->query($sql);
 // get category ID
 $cat= $_GET['cat'];
 // get recipe ID
 $rid= $_GET['rid'];
+
+$sql = "SELECT recipe_id, recipe_name, recipe_image FROM Recipe WHERE recipe_id = '$rid'";
+$result = $conn->query($sql);
+
 
 ?>
 

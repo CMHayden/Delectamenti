@@ -1,0 +1,29 @@
+<?php
+$servername = "mysql-server-1";
+$username = "cmh1";
+$password = "abccmh1354";
+$DB_Name = "cmh1";
+$cat= $_GET['cat'];
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $DB_Name);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT step_description FROM Recipe_Steps WHERE recipe_id = '$rid'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+      echo
+      '<li>' .$row["step_description"].'</li>';
+    }
+  }else{
+    echo'
+    No' . $cat . 'recipes found';
+  }
+
+$conn->close();
+?>

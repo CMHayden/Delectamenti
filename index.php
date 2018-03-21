@@ -32,7 +32,7 @@
     </form>
   </div>
   <div class = "logo" id="logo">
-    <a href="index.html"><h1>Delectamenti</h1></a>
+    <a href="index.php"><h1>Delectamenti</h1></a>
   </div>
   <div class = "nav" id="myNav">
 	<?php include 'includes/nav.php';?>

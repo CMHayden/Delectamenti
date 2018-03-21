@@ -42,7 +42,7 @@
   </div>
   <div class = "catalogue" id="catalogue">
     <div align="center" class ="center">
-      <a href="british.html"><img src="Image/fryup.png" alt="Full British breakfast"  width="220" height="170">
+      <a href="british.php"><img src="Image/fryup.png" alt="Full British breakfast"  width="220" height="170">
       <p> British food </p></a>
     </div>
     <div align="center" class ="center">

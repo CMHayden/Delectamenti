@@ -48,7 +48,7 @@
     Try some of our <?php echo $country ?> food! Feel free to use the search bar if you can't find anything that takes your fancy.
   </div>
   <div class = "catalogue" id="catalogue">
-    <?php include 'rlist.php?cat='$cat;?>
+    <?php include 'rlist.php?cat='.$cat.'';?>
   </div>
 <footer>
   <div class ="footer" id="footer">

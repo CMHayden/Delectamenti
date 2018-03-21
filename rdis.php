@@ -63,34 +63,38 @@
   </div>
     <div class = "recipe">
 	<section aria-label="recipe" id="recipe">
-		  <p>Vegetable pad Thai</p><br/>
+		<h2>RECIPE TITLE H2</h2>
 		  <img src="Image/vegetablepadthai.png" alt="Vegetable pad Thai" height="155px" width="220px" padding="15px" align = "left"></img>
-		  Ingredients: <br></br>
-		  200g (7oz) flat rice noodles<br />
-		  4 tbsp tamarind sauce<br />
-		  2 tbsp fish sauce<br />
-		  1 tbsp brown sugar<br />
-		  1/2-1 tsp tsp chilli flakes<br />
-		  2 tbsp vegetable oil<br />
-		  2 garlic cloves, finely chopped<br />
-		  2 large eggs, lightly beaten<br />
-		  1 x 320g pack vegetable and beansprout stir fry<br />
-		  50g (2oz) roasted peanuts, roughly chopped<br />
-		  1 lime, quartered<br />
+		<div class="recipe.ingredients">
+			<h3>What you'll need&#8230;</h3>
+			  200g (7oz) flat rice noodles<br />
+			  4 tbsp tamarind sauce<br />
+			  2 tbsp fish sauce<br />
+			  1 tbsp brown sugar<br />
+			  1/2-1 tsp tsp chilli flakes<br />
+			  2 tbsp vegetable oil<br />
+			  2 garlic cloves, finely chopped<br />
+			  2 large eggs, lightly beaten<br />
+			  1 x 320g pack vegetable and beansprout stir fry<br />
+			  50g (2oz) roasted peanuts, roughly chopped<br />
+			  1 lime, quartered<br />
+		</div>
 		  <br />
-		  Directions:
-		  <ol>
-			<li>Soak the noodles in freshly boiled water for 12 minutes. Strain and set aside. While the
-			  noodles are soaking, mix the tamarind, fish sauce, sugar and chilli flakes together.</li>
-			<li>Heat the vegetable oil in a large frying pan and add the garlic. Cook briefly, watching it
-			  doesn’t burn, then add the tamarind and fish sauce mixture. Let this bubble for a minute,
-			  then transfer to a bowl.</li>
-			<li>In the same pan, on medium-high heat, add the beaten eggs. Let them set for a minute,
-			  without stirring. Once set, break vigorously with a wooden spoon.</li>
-			<li>Add the stir fry vegetables and cook for 2 minutes, stirring from time to time. Then
-			  add the noodles, pour over the sauce, stir well and cook for another minute or two. Serve
-			  sprinkled with chopped peanuts and a squeeze of lime.</li>
-		  </ol>
+		<div>
+			<h3>What to do:</h3>
+			  <ol>
+				<li>Soak the noodles in freshly boiled water for 12 minutes. Strain and set aside. While the
+				  noodles are soaking, mix the tamarind, fish sauce, sugar and chilli flakes together.</li>
+				<li>Heat the vegetable oil in a large frying pan and add the garlic. Cook briefly, watching it
+				  doesn’t burn, then add the tamarind and fish sauce mixture. Let this bubble for a minute,
+				  then transfer to a bowl.</li>
+				<li>In the same pan, on medium-high heat, add the beaten eggs. Let them set for a minute,
+				  without stirring. Once set, break vigorously with a wooden spoon.</li>
+				<li>Add the stir fry vegetables and cook for 2 minutes, stirring from time to time. Then
+				  add the noodles, pour over the sauce, stir well and cook for another minute or two. Serve
+				  sprinkled with chopped peanuts and a squeeze of lime.</li>
+			  </ol>
+		</div>
 	</section>
       <!--<button onclick="myFunction()">Print this recipe</button>-->
 		<div class="sharethis-inline-share-buttons"></div>
@@ -102,6 +106,7 @@
 	</section>
     <footer>
       <div class ="footer" id="footer">
+		<?php include 'includes/footer.php';?>
         Copyright © 2018 Delectamenti. Delectamenti is not responsible for any allergic reactions caused by the consumption of our recipes. <a href="https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm079311.htm"> Please check this FDA document on food allergies if unsure. </a>
         Recipes for this website have been used under the non-commercial research and private study exception to the Copyright. All recipes originally sourced from BBC Food.
         Any enquiries please use the contact form or email us at <a href="mailto:delectamentiuk@gmail.com?Subject=Enquiry" target="_top">DelectamentiUK@gmail.com</a> .

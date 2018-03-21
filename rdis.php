@@ -81,29 +81,10 @@ $rid= $_GET['rid'];
     <div class = "recipe">
 	<section aria-label="recipe" id="recipe">
 		<?php
-		$rid= $_GET['rid'];
-		if ($result->num_rows > 0) {    while($row = $result->fetch_assoc()) {
+	
       echo '
-	  <h2>'. $row["recipe_name"].'</h2>
-		  <img src="'. $row["recipe_image"].'" alt="'. $row["recipe_name"].'" height="155px" width="220px" padding="15px" align = "left">
-		<div class="recipe.ingredients">
-			<h3>What you will need&#8230;</h3>
-			  200g (7oz) flat rice noodles<br />
-			  4 tbsp tamarind sauce<br />
-			  2 tbsp fish sauce<br />
-			  1 tbsp brown sugar<br />
-			  1/2-1 tsp tsp chilli flakes<br />
-			  2 tbsp vegetable oil<br />
-			  2 garlic cloves, finely chopped<br />
-			  2 large eggs, lightly beaten<br />
-			  1 x 320g pack vegetable and beansprout stir fry<br />
-			  50g (2oz) roasted peanuts, roughly chopped<br />
-			  1 lime, quartered<br />
-		</div>
-		  <br />
-		<div>''
 			<h3>What to do:</h3>
-			  <ol>'include 'includes/get_steps.php?rid=$rid'; echo'
+			  <ol>'include 'includes/get_steps.php'; echo'
 			  </ol>
         <div align="center" class ="center">
             <a href="rdis.php?rid='. $row["recipe_id"]. '"><img src="'. $row["recipe_image"]. '" alt="'. $row["recipe_name"]. '"  width="220" height="170"></img>

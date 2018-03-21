@@ -10,7 +10,7 @@
 	//get category ID
 	$cat= $_GET['cat'];
 	//get countryname
-	$cat= $_GET['country'];
+	$country= $_GET['country'];
 		echo'
 	<title>Delectamenti ~ Recipes from ' . $country . '</title>
 	<meta name="DC.Title" content="Recipes from ' . $country . '">

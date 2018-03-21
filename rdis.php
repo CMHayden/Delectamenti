@@ -22,7 +22,16 @@ $rid= $_GET['rid'];
 
 $sql = "SELECT recipe_id, recipe_name, recipe_image FROM Recipe WHERE recipe_id = '$rid'";
 $result = $conn->query($sql);
-$title = $row["recipe_name"];
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+      $title = $row["recipe_name"];
+	  $imgsrc = $row["recipe_image"];
+    }
+  }else{
+    echo'
+    No' . $cat . 'recipes found';
+	die;
+  };
 
 ?>
 
@@ -104,7 +113,7 @@ $title = $row["recipe_name"];
 			  <ol>'; include 'includes/get_steps.php'; echo'
 			  </ol>
         <div align="center" class ="center">
-            <a href="rdis.php?rid='. $row["recipe_id"]. '"><img src="'. $row["recipe_image"]. '" alt="'. $row["recipe_name"]. '"  width="220" height="170"></img>
+            <a href="rdis.php?rid='. $row["recipe_id"]. '"><img src="'. $imgsrc . '" alt="'. $title. '"  width="220" height="170"></img>
             <p> '. $row["recipe_name"]. ' </p></a>
         </div>
       ';

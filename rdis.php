@@ -22,8 +22,8 @@ $rid= $_GET['rid'];
     <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."> <!-- used by search engines -->
     <meta name="author" content="Callum M Hayden & Martyn Dewar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- used for RWD -->
-    <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css"></link>
-    <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
+    <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css">
 		<link rel="stylesheet" href="temp.css">
 	<link rel="stylesheet" href="https://use.typekit.net/iew2fuc.css">
 	<title>Delectamenti ~ <?php echo $rid ?></title> <!-- specify title -->
@@ -38,7 +38,9 @@ $rid= $_GET['rid'];
         window.print();
     }
     </script>
-	<!--start social media and sharing code -->
+
+</head>
+<body>	<!--start social media and sharing code -->
 		<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab1d5f2b33883001365505d&product=inline-share-buttons"></script>
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
@@ -49,14 +51,12 @@ $rid= $_GET['rid'];
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 	<!-- end social media and sharing code -->
-</head>
-<body>
 <div class = "wrapper" id="wrapper">
   <div class = "socialsearch" id="socialsearch">
-    <a href=https://www.instagram.com/delectamentiuk><img src="Image/instagram.png" alt="Instagram link" width="25" height="25"></img></a>
-    <a href=https://twitter.com/DelectamentiUk><img src="Image/twitter.png" alt="Twitter link" width="25" height="25"></img></a>
-    <a href=https://www.pinterest.co.uk/delectamenti/pins/><img src="Image/pinterest.png" alt="Pinterest link" width="25" height="25"></img></a>
-    <a href=https://www.facebook.com/DelectamentiUK/><img src="Image/facebook.png" alt="Facebook link" width="25" height="25"></img></a>
+    <a href=https://www.instagram.com/delectamentiuk><img src="Image/instagram.png" alt="Instagram link" width="25" height="25"></a>
+    <a href=https://twitter.com/DelectamentiUk><img src="Image/twitter.png" alt="Twitter link" width="25" height="25"></a>
+    <a href=https://www.pinterest.co.uk/delectamenti/pins/><img src="Image/pinterest.png" alt="Pinterest link" width="25" height="25"></a>
+    <a href=https://www.facebook.com/DelectamentiUK/><img src="Image/facebook.png" alt="Facebook link" width="25" height="25"></a>
   </div>
   <div class = "search" id="search">
     <form>
@@ -80,7 +80,7 @@ $rid= $_GET['rid'];
     <div class = "recipe">
 	<section aria-label="recipe" id="recipe">
 		<h2>RECIPE TITLE H2</h2>
-		  <img src="Image/vegetablepadthai.png" alt="Vegetable pad Thai" height="155px" width="220px" padding="15px" align = "left"></img>
+		  <img src="Image/vegetablepadthai.png" alt="Vegetable pad Thai" height="155px" width="220px" padding="15px" align = "left">
 		<div class="recipe.ingredients">
 			<?php 
 
@@ -117,8 +117,6 @@ $rid= $_GET['rid'];
 	</section>
       <!--<button onclick="myFunction()">Print this recipe</button>-->
 		<div class="sharethis-inline-share-buttons"></div>
-      <br />
-      <br />
     </div>
 	<section>
 		<div class="fb-comments" data-href="http://www2.macs.hw.ac.uk/~md46/F28CD/cw/Delectamenti/rdis.php?rid=<?php echo $rid ?><" data-numposts="5"></div>	
@@ -128,5 +126,6 @@ $rid= $_GET['rid'];
 		<?php include 'includes/footer.php';?>
       </div>
     </footer>
+</div>
   </body>
 </html>

@@ -1,3 +1,4 @@
+<?php setcookie("delectamemnti.user", "", time() - 3600); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +7,7 @@
     <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."></meta> <!-- used by search engines -->
     <meta name="author" content="Callum M Hayden & Martyn Dewar"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> <!-- used for RWD -->
-	  <title>Login</title>
+	  <title>Delectamenti - You are now logged out</title>
     <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css"></link>
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
 </head>
@@ -30,7 +31,8 @@
     <?php include 'includes/nav.php';?>
   </div>
   <div class = "display">
-	  <h2>Please login</h2>
+	  <h2>You are now logged out!</h2>
+	  <p>If you wish to log back in, please fill in your details... </p>
     <form name="login" method="post" action="login.php">
       <label for="username">Username</label>
       <input type="text" id="user_name" name="user_name" placeholder="Your username.."></input>

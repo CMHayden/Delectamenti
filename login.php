@@ -19,6 +19,9 @@ $sql = "SELECT user_name, passwd FROM Users WHERE user_name ='$username' AND pas
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+	$cookie_name = "delectamenti.user";
+	$cookie_value = $username;
+	setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
         echo '
         <html>
         <head>

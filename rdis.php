@@ -1,3 +1,19 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+include ("includes/dbfunctions.php");
+
+//start session
+session_start();
+$username = "cmh1";
+$password = "abccmh1354";
+$dbConn = dbConnect("$username", "$password") ;
+dbSelect($dbConn, "$username");
+
+$rid= $_GET['rid'];
+
+//print first part of html
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +26,7 @@
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
 		<link rel="stylesheet" href="temp.css">
 	<link rel="stylesheet" href="https://use.typekit.net/iew2fuc.css">
-	<title>Delectamenti ~ Vegetable pad Thai</title> <!-- specify title -->
+	<title>Delectamenti ~ <?php echo ?></title> <!-- specify title -->
 	<meta name="DC.Title" content="Vegetable pad Thai">
 	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">
 	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">
@@ -66,6 +82,9 @@
 		<h2>RECIPE TITLE H2</h2>
 		  <img src="Image/vegetablepadthai.png" alt="Vegetable pad Thai" height="155px" width="220px" padding="15px" align = "left"></img>
 		<div class="recipe.ingredients">
+			<?php 
+
+			?>
 			<h3>What you'll need&#8230;</h3>
 			  200g (7oz) flat rice noodles<br />
 			  4 tbsp tamarind sauce<br />
@@ -102,7 +121,7 @@
       <br />
     </div>
 	<section>
-		<div class="fb-comments" data-href="http://www2.macs.hw.ac.uk/~md46/F28CD/cw/Delectamenti/rdis.php?rid=" data-numposts="5"></div>	
+		<div class="fb-comments" data-href="http://www2.macs.hw.ac.uk/~md46/F28CD/cw/Delectamenti/rdis.php?rid=<?php echo $rid ?><" data-numposts="5"></div>	
 	</section>
     <footer>
       <div class ="footer" id="footer">

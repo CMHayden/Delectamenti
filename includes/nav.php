@@ -7,7 +7,7 @@
 		<a href="login.html" accesskey="l" title="Login">    Login   </a>
 
 <?php
-$cookie_name = 'delectamenti.user'
+$cookie_name = 'delectamenti.user';
 if(!isset($_COOKIE[$cookie_name])) {
     echo '<a href="login.html" accesskey="l" title="Login">    Login   </a>';
 } else {

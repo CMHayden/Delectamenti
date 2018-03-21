@@ -103,7 +103,7 @@ if ($result->num_rows > 0) {
       echo
       '<h2>' . $title .'</h2>';
 		// build elements
-		echo '<img src="Image/'. $imgsrc . '" alt="'. $title. '"  width="220" height="170"></img>';
+		echo '<img src="Image/'. $imgsrc . '" alt="'. $title. '"  width="220" height="170">';
       echo '
 	  <div class="recipe.ingredients">
 			<h3>What you will need&#8230;</h3>
@@ -126,13 +126,12 @@ if ($result->num_rows > 0) {
       <!--<button onclick="myFunction()">Print this recipe</button>-->
 		<div class="sharethis-inline-share-buttons"></div>
     </div>
-	<section><h3></h3>
+	<section><h3>Why not let us know what you think?</h3>
 		<div class="fb-comments" data-href="http://www2.macs.hw.ac.uk/~md46/F28CD/cw/Delectamenti/rdis.php?rid=<?php echo $rid ?><" data-numposts="5"></div>	
 	</section>
     <footer>
       <div class ="footer" id="footer">
 		<?php include 'includes/footer.php';?>
-      </div>
     </footer>
 </div>
   </body>

@@ -13,7 +13,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT recipe_name, recipe_image FROM Recipe WHERE food_category_id = '$cat'";
+$sql = "SELECT recipe_id, recipe_name, recipe_image FROM Recipe WHERE food_category_id = '$cat'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
     }
   }else{
     echo'
-    No british recipes found';
+    No' . $cat . 'recipes found';
   }
 
 $conn->close();

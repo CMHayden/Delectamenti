@@ -14,7 +14,7 @@
 	<meta name="DC.Title" content="Delectamenti Recipe website">
 	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">
 	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">
-	<meta name="DC.Description" content="This website contains the output for F28CD coursework.">
+	<meta name="DC.Description" content="A website gathering recipes and helping to teach people how to cook.">
 	<meta name="DC.Publisher" content="Martyn Dewar &amp; Callum Hayden, MACS, Heriot-Watt University">
 	<meta name="DC.Language" content="en-GB"><meta name="DC.Date" content="2018">
 </head>

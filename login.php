@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
 			include 'includes/nav.php'; echo'
           </div>
           <div class = "display">
-            Login succesfull!
+            You have now logged in,' . $username . '- welcome to Delectamenti!
           </div>
         </body>
         <footer>

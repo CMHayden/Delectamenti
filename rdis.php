@@ -88,9 +88,17 @@ $result = $conn->query($sql);
 	<section aria-label="recipe" id="recipe">
 		<?php
 	
+		// build elements
+
       echo '
 	  {
+	  		<div class="recipe.ingredients">
+			<h3>What you will need&#8230;</h3>
+						  <ol>'; include 'includes/get_ingredients.php'; echo'
+			  </ol>
+			</div>
 			<h3>What to do:</h3>
+			
 			  <ol>'; include 'includes/get_steps.php'; echo'
 			  </ol>
         <div align="center" class ="center">

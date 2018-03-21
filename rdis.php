@@ -1,19 +1,26 @@
 <?php
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-include ("includes/dbfunctions.php");
-
-//start session
-session_start();
+$servername = "mysql-server-1";
 $username = "cmh1";
 $password = "abccmh1354";
-$dbConn = dbConnect("$username", "$password") ;
-dbSelect($dbConn, "$username");
+$DB_Name = "cmh1";
+$cat= $_GET['cat'];
 
+// Create connection
+$conn = new mysqli($servername, $username, $password, $DB_Name);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT recipe_id, recipe_name, recipe_image FROM Recipe WHERE recipe_id = '$rid'";
+$result = $conn->query($sql);
 $rid= $_GET['rid'];
-
-//print first part of html
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,13 +81,13 @@ $rid= $_GET['rid'];
   </div>
     <div class = "recipe">
 	<section aria-label="recipe" id="recipe">
-		<h2>RECIPE TITLE H2</h2>
+		<? if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+      echo '
+	  <h2>'. $row["recipe_name"].'</h2>
 		  <img src="Image/vegetablepadthai.png" alt="Vegetable pad Thai" height="155px" width="220px" padding="15px" align = "left">
 		<div class="recipe.ingredients">
-			<?php 
-
-			?>
-			<h3>What you'll need&#8230;</h3>
+			<h3>What you will need&#8230;</h3>
 			  200g (7oz) flat rice noodles<br />
 			  4 tbsp tamarind sauce<br />
 			  2 tbsp fish sauce<br />
@@ -108,6 +115,20 @@ $rid= $_GET['rid'];
 				  add the noodles, pour over the sauce, stir well and cook for another minute or two. Serve
 				  sprinkled with chopped peanuts and a squeeze of lime.</li>
 			  </ol>
+        <div align="center" class ="center">
+            <a href="rdis.php?rid='. $row["recipe_id"]. '"><img src="'. $row["recipe_image"]. '" alt="'. $row["recipe_name"]. '"  width="220" height="170"></img>
+            <p> '. $row["recipe_name"]. ' </p></a>
+        </div>
+      ';
+    }
+  }else{
+    echo 'Sorry, there is a fault. Click <a href="index.php" title="return to homepage">here</a> to return to the homepage.<br>Our apologies.</a>';
+  }
+
+		
+		?>
+		
+		
 		</div>
 	</section>
       <!--<button onclick="myFunction()">Print this recipe</button>-->

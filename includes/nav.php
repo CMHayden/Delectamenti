@@ -7,7 +7,7 @@
 <?php
 $cookie_name = 'delectamenti.user';
 if(!isset($_COOKIE[$cookie_name])) {
-    echo '<a href="login.php" accesskey="l" title="Login">    Login   </a>';
+    echo '<a href="login_s1.php" accesskey="l" title="Login">    Login   </a>';
 } else {
     echo '<a href="logout.php" accesskey="l" title="Logout of website">     Logged in as ' . $_COOKIE[$cookie_name] . ' </a>';
 }

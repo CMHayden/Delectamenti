@@ -1,3 +1,4 @@
+<?php setcookie("delectamemnti.user", "", time() - 3600); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +7,7 @@
     <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."></meta> <!-- used by search engines -->
     <meta name="author" content="Callum M Hayden & Martyn Dewar"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> <!-- used for RWD -->
-	  <title>Login</title>
+	  <title>Delectamenti - You are now logged out</title>
     <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css"></link>
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
 </head>
@@ -27,15 +28,11 @@
     <a href="index.html"><h1>Delectamenti</h1></a>
   </div>
   <div class = "nav" id="myNav">
-    <a                  href="index.html">    Home    </a>
-    <a></a>
-    <a                  href="about.html">    About   </a>
-    <a></a>
-    <a                  href="contact.html">  Contact </a>
-    <a></a>
-    <a                  href="login.html">    Login   </a>
+    <?php include 'includes/nav.php';?>
   </div>
   <div class = "display">
+	  <h2>You are now logged out!</h2>
+	  <p>If you wish to log back in, please fill in your details... </p>
     <form name="login" method="post" action="login.php">
       <label for="username">Username</label>
       <input type="text" id="user_name" name="user_name" placeholder="Your username.."></input>
@@ -44,16 +41,14 @@
       <input type="password" id="passwd" name="passwd" placeholder="Your password..."></input>
       <br />
       <input type="submit" value="Log In"></input>
-      <input type="button" value="Sign Up" onclick="window.location.href='signup.html'"></input>
-      <input type="button" value="Forgot Password" onclick="window.location.href='forgotpassword.html'"></input>
+      <input type="button" value="Sign Up" onclick="window.location.href='signup.php'"></input>
+      <input type="button" value="Forgot Password" onclick="window.location.href='forgotpassword.php'"></input>
     </form>
   </div>
 </body>
 <footer>
   <div class ="footer" id="footer">
-    Copyright © 2018 Delectamenti. Delectamenti is not responsible for any allergic reactions caused by the consumption of our recipes. <a href="https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm079311.htm"> Please check this FDA document on food allergies if unsure. </a>
-    Recipes for this website have been used under the non-commercial research and private study exception to the Copyright. All recipes originally sourced from BBC Food.
-    Any enquiries please use the contact form or email us at <a href="mailto:delectamentiuk@gmail.com?Subject=Enquiry" target="_top">DelectamentiUK@gmail.com</a> .
+    <?php include 'includes/footer.php';?>
   </div>
 </footer>
 </html>

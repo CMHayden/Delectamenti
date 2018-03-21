@@ -6,7 +6,6 @@ $servername = "mysql-server-1";
 $username = "cmh1";
 $password = "abccmh1354";
 $DB_Name = "cmh1";
-$cat= $_GET['cat'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $DB_Name);

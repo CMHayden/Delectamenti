@@ -6,15 +6,32 @@
     <meta name="keywords" content="Delectamenti. Food. Eat. Cook. Recipe."></meta> <!-- used by search engines -->
     <meta name="author" content="Callum M Hayden & Martyn Dewar"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> <!-- used for RWD -->
-	  <title>Vegetable pad Thai</title>
     <link rel="stylesheet" media="screen and (min-width: 550px)" href="style.css"></link>
     <link rel="stylesheet" media="screen and (max-width: 550px)" href="smallstyle.css"></link>
+		<link rel="stylesheet" href="temp.css">
+	<link rel="stylesheet" href="https://use.typekit.net/iew2fuc.css">
+	<title>Delectamenti ~ Vegetable pad Thai</title> <!-- specify title -->
+	<meta name="DC.Title" content="Vegetable pad Thai">
+	<meta name="DC.Creator" content="Martyn Dewar / Callum Hayden">
+	<meta name="DC.Subject" content="F28CD Coursework - Delectamenti">
+	<meta name="DC.Description" content="A website gathering recipes and helping to teach people how to cook.">
+	<meta name="DC.Publisher" content="Martyn Dewar &amp; Callum Hayden, MACS, Heriot-Watt University">
+	<meta name="DC.Language" content="en-GB"><meta name="DC.Date" content="2018">
     <script>
     function myFunction() {
         window.print();
     }
     </script>
+	<!--shares -->
 	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab1d5f2b33883001365505d&product=inline-share-buttons"></script>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </head>
 <body>
 <div class = "wrapper" id="wrapper">
@@ -75,6 +92,9 @@
       <br />
       <br />
     </div>
+	<section>
+		<div class="fb-comments" data-href="http://www2.macs.hw.ac.uk/~md46/F28CD/cw/Delectamenti/rdis.php" data-numposts="5"></div>	
+	</section>
   </body>
     <footer>
       <div class ="footer" id="footer">
